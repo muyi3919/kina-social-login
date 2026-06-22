@@ -32,7 +32,7 @@
 
 ```bash
 cd /path/to/wp-content/plugins/
-git clone https://github.com/yourname/kina-social-login.git
+git clone https://github.com/muyi3919/kina-social-login.git
 ```
 
 然后在后台激活插件。
