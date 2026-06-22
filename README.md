@@ -103,19 +103,19 @@ CREATE TABLE wp_kina_social_accounts (
 
 ## 更新日志
 
-| 版本 | 日期 | 更新内容 |
-|------|------|---------|
-| v3.0.0 | 2026-06-22 | 全新数据表 `wp_kina_social_accounts`，与旧版完全隔离；首次扫码登录支持「创建新账号」和「绑定已有账号」双选项卡；新增自动注册开关；修复旧版字段名 `type` → `social_type` 导致的写入失败问题 |
-| v2.0.3 | 2026-06-22 | 修复：增加数据库写入错误检测，暴露字段名不匹配问题 |
-| v2.0.2 | 2026-06-22 | 修复：`form.action` 被 `<input name="action">` 覆盖，改为 `form.getAttribute('action')` |
-| v2.0.1 | 2026-06-22 | 修复：`template_redirect` 被主题拦截导致回调 404，改用 `init` hook |
-| v2.0.0 | 2026-06-22 | 大版本更新：前台扫码未绑定可直接关联已有账号（输入用户名密码绑定）；图标全部换成 Font Awesome 6 |
-| v1.0.5 | 2026-06-22 | 修复：登录按钮改用 JS 动态创建表单，解决表单嵌套问题；`form.action` 改为 `form.getAttribute('action')` |
-| v1.0.4 | 2026-06-22 | 修复：CSS 选择器加 `#login` / `.login` 前缀；新增 `check_admin_callback()` 处理后台绑定回调 |
-| v1.0.3 | 2026-06-22 | 修复：删除不存在的 `handle_bind_callback()` 方法，绑定回调统一走 `handle_callback()` |
-| v1.0.2 | 2026-06-22 | 修复：POST 参数 `type` 通过 hidden input 传递；CSS 加 `!important` 覆盖主题样式 |
-| v1.0.1 | 2026-06-22 | 修复：登录按钮直接指向 API 导致显示 JSON，改为后端请求再跳转 |
-| v1.0.0 | 2026-06-22 | 初始版本，支持 QQ/微信/支付宝/GitHub 聚合登录，后台绑定，前台扫码登录 |
+| 版本  | 更新内容 |
+|------|---------|
+| v3.0.0  | 全新数据表 `wp_kina_social_accounts`，与旧版完全隔离；首次扫码登录支持「创建新账号」和「绑定已有账号」双选项卡；新增自动注册开关；修复旧版字段名 `type` → `social_type` 导致的写入失败问题 |
+| v2.0.3  | 修复：增加数据库写入错误检测，暴露字段名不匹配问题 |
+| v2.0.2  | 修复：`form.action` 被 `<input name="action">` 覆盖，改为 `form.getAttribute('action')` |
+| v2.0.1  | 修复：`template_redirect` 被主题拦截导致回调 404，改用 `init` hook |
+| v2.0.0 | 大版本更新：前台扫码未绑定可直接关联已有账号（输入用户名密码绑定）；图标全部换成 Font Awesome 6 |
+| v1.0.5  | 修复：登录按钮改用 JS 动态创建表单，解决表单嵌套问题；`form.action` 改为 `form.getAttribute('action')` |
+| v1.0.4  | 修复：CSS 选择器加 `#login` / `.login` 前缀；新增 `check_admin_callback()` 处理后台绑定回调 |
+| v1.0.3  | 修复：删除不存在的 `handle_bind_callback()` 方法，绑定回调统一走 `handle_callback()` |
+| v1.0.2  | 修复：POST 参数 `type` 通过 hidden input 传递；CSS 加 `!important` 覆盖主题样式 |
+| v1.0.1  | 修复：登录按钮直接指向 API 导致显示 JSON，改为后端请求再跳转 |
+| v1.0.0 | 初始版本，支持 QQ/微信/支付宝/GitHub 聚合登录，后台绑定，前台扫码登录 |
 
 ---
 
