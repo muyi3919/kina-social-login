@@ -2,7 +2,7 @@
 
 > WordPress 聚合登录插件，支持 QQ、微信、支付宝、GitHub 扫码登录，自动创建/绑定账号，免密一键登录。
 
-[![Version](https://img.shields.io/badge/version-3.0.0-blue)](https://github.com/yourname/kina-social-login)
+[![Version](https://img.shields.io/badge/version-3.0.0-blue)](https://github.com/muyi3919/kina-social-login)
 [![License](https://img.shields.io/badge/license-GPL--2.0%2B-green)](https://www.gnu.org/licenses/gpl-2.0.html)
 
 ---
